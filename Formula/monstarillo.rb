@@ -9,16 +9,16 @@ class Monstarillo < Formula
 
   on_macos do
     if Hardware::CPU.arm?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.5/monstarillo_0.0.5_Darwin_arm64.tar.gz"
-      sha256 "ef47a1e6b77a872e7627b94304ed9e219cfe079caa10d0362b4fc00493827c6b"
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.6/monstarillo_0.0.6_Darwin_arm64.tar.gz"
+      sha256 "065d4c98dccee711e7a77c8d99a6dc1fe4e10165a19db533f288688d0854a2a2"
 
       def install
         bin.install "monstarillo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.5/monstarillo_0.0.5_Darwin_x86_64.tar.gz"
-      sha256 "b46c322de97c79fe287e99065e96e4c053b19caa752efc19c150326142faef43"
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.6/monstarillo_0.0.6_Darwin_x86_64.tar.gz"
+      sha256 "371cc7d723812a241880e640fe446960d3f3b396702b6c626b7d2f5b075db332"
 
       def install
         bin.install "monstarillo"
@@ -28,16 +28,16 @@ class Monstarillo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.5/monstarillo_0.0.5_Linux_arm64.tar.gz"
-      sha256 "051e396d34e8659c96dbb8f2728c27228486e7f9a5cacdf98aee01b10818e71d"
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.6/monstarillo_0.0.6_Linux_arm64.tar.gz"
+      sha256 "a49c96a4fe950af5fe6ee9fa10092c438f289f89b27ffcea1892223aeae1a905"
 
       def install
         bin.install "monstarillo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.5/monstarillo_0.0.5_Linux_x86_64.tar.gz"
-      sha256 "32cd11483a56215dfdf018470eb272b03ebf564b4558243ca49bfdd2a2420a33"
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.6/monstarillo_0.0.6_Linux_x86_64.tar.gz"
+      sha256 "0dd624b9d07280f1d4eaa448b0bb6d65cf84f68a35c107378ce19656b3911b01"
 
       def install
         bin.install "monstarillo"
