@@ -5,20 +5,20 @@
 class Monstarillo < Formula
   desc "A code generator"
   homepage "https://github.com/monstarillo/monstarillo"
-  version "0.0.8"
+  version "0.0.9"
 
   on_macos do
-    if Hardware::CPU.arm?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.8/monstarillo_0.0.8_Darwin_arm64.tar.gz"
-      sha256 "2146fec7ed551cae271acf855872bb0787351ee25693e51e004882d57239b027"
+    if Hardware::CPU.intel?
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.9/monstarillo_0.0.9_Darwin_x86_64.tar.gz"
+      sha256 "eb00d06f177dfe78e4c6ee4f94f9cac8e1ce9a1555f8d7e614399cf675d001cc"
 
       def install
         bin.install "monstarillo"
       end
     end
-    if Hardware::CPU.intel?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.8/monstarillo_0.0.8_Darwin_x86_64.tar.gz"
-      sha256 "3626d87cf4b2d3d289b7f796aece0e582865cfe711d8fa90cf1828035caae437"
+    if Hardware::CPU.arm?
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.9/monstarillo_0.0.9_Darwin_arm64.tar.gz"
+      sha256 "12864158e21f199f7ae2e807920e070b0e2a274fd8c7e5f867f3dec287dbbc56"
 
       def install
         bin.install "monstarillo"
@@ -28,16 +28,16 @@ class Monstarillo < Formula
 
   on_linux do
     if Hardware::CPU.arm? && Hardware::CPU.is_64_bit?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.8/monstarillo_0.0.8_Linux_arm64.tar.gz"
-      sha256 "43cbba690047610e2e54cda7e68316492b1ca09fd86726a0c61d044524508cac"
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.9/monstarillo_0.0.9_Linux_arm64.tar.gz"
+      sha256 "2cca92184f16f8c14890ca4234138123bbfadfac6d13b3f87e93574ef9a3fe0d"
 
       def install
         bin.install "monstarillo"
       end
     end
     if Hardware::CPU.intel?
-      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.8/monstarillo_0.0.8_Linux_x86_64.tar.gz"
-      sha256 "8d96bdff2d47c36d7f96945ce9a5909f41196ce26eaef9c6ea5670f91881dc42"
+      url "https://github.com/monstarillo/monstarillo/releases/download/v0.0.9/monstarillo_0.0.9_Linux_x86_64.tar.gz"
+      sha256 "a8ab16d86e84ae8b484fed05675c28459a959b061440caaeeddd0a4a45e60a79"
 
       def install
         bin.install "monstarillo"
